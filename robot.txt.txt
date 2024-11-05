@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /scripts/
+Disallow: /backup/
+
+# Allow specific files in the disallowed directories
+Allow: /admin/admin-ajax.php
+
+# Sitemap location
+Sitemap: http://www.rakata.co.il/sitemap.xml
