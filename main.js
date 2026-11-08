@@ -37,7 +37,7 @@ const revealConfigs = [
 ];
 
 revealConfigs.forEach(({ selector, options }) => {
-  ScrollReveal().reveal(selector, { ...scrollRevealOption, ...options });
+  SiteUI.reveal(selector, { ...scrollRevealOption, ...options });
 });
 
 // Single Swiper configuration
@@ -73,4 +73,4 @@ const swiperConfig = {
 };
 
 // Initialize Swiper
-new Swiper('.swiper', swiperConfig);
+SiteUI.slider('.swiper', swiperConfig);
